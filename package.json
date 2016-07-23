@@ -1,16 +1,66 @@
 {
-  "name": "react-native-fabric",
-  "version": "0.3.0",
+  "_args": [
+    [
+      {
+        "name": "react-native-fabric",
+        "raw": "react-native-fabric@^0.3.0",
+        "rawSpec": "^0.3.0",
+        "scope": null,
+        "spec": ">=0.3.0 <0.4.0",
+        "type": "range"
+      },
+      "/Users/ryanchoi/commaful/commaful"
+    ]
+  ],
+  "_from": "react-native-fabric@>=0.3.0 <0.4.0",
+  "_id": "react-native-fabric@0.3.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-native-fabric",
+  "_nodeVersion": "5.6.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-native-fabric-0.3.0.tgz_1467743829045_0.4392211011145264"
+  },
+  "_npmUser": {
+    "email": "cory.m.smith@gmail.com",
+    "name": "corymsmith"
+  },
+  "_npmVersion": "3.8.7",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "react-native-fabric",
+    "raw": "react-native-fabric@^0.3.0",
+    "rawSpec": "^0.3.0",
+    "scope": null,
+    "spec": ">=0.3.0 <0.4.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-fabric/-/react-native-fabric-0.3.0.tgz",
+  "_shasum": "bcdd59affc20d367ba2eb5c7a9b98069e34a41dc",
+  "_shrinkwrap": null,
+  "_spec": "react-native-fabric@^0.3.0",
+  "_where": "/Users/ryanchoi/commaful/commaful",
+  "author": {
+    "email": "cory.m.smith@gmail.com",
+    "name": "Cory Smith"
+  },
+  "bugs": {
+    "url": "https://github.com/corymsmith/react-native-fabric/issues"
+  },
+  "dependencies": {},
   "description": "A React Native library for Fabric, Crashlytics and Answers",
-  "main": "index",
-  "rnpm": {
-    "android": {
-      "packageInstance": "new FabricPackage()"
-    }
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "bcdd59affc20d367ba2eb5c7a9b98069e34a41dc",
+    "tarball": "https://registry.npmjs.org/react-native-fabric/-/react-native-fabric-0.3.0.tgz"
   },
-  "scripts": {
-    "test": "flow"
-  },
+  "gitHead": "0d0dd827a3a8a77341285919d3726aebca3d5f1f",
+  "homepage": "https://github.com/corymsmith/react-native-fabric",
   "keywords": [
     "react-native",
     "react-component",
@@ -23,17 +73,28 @@
     "fabric",
     "answers"
   ],
-  "author": {
-    "name": "Cory Smith",
-    "email": "cory.m.smith@gmail.com"
-  },
-  "homepage": "https://github.com/corymsmith/react-native-fabric",
-  "bugs": {
-    "url": "https://github.com/corymsmith/react-native-fabric/issues"
-  },
+  "license": "MIT",
+  "main": "index",
+  "maintainers": [
+    {
+      "email": "cory.m.smith@gmail.com",
+      "name": "corymsmith"
+    }
+  ],
+  "name": "react-native-fabric",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/corymsmith/react-native-fabric.git"
   },
-  "license": "MIT"
+  "rnpm": {
+    "android": {
+      "packageInstance": "new FabricPackage()"
+    }
+  },
+  "scripts": {
+    "test": "flow"
+  },
+  "version": "0.3.0"
 }

@@ -7,15 +7,15 @@ A React Native library for Fabric, Crashlytics and Answers
 
 - Set up Fabric / Crashlytics in your app as instructed on [Fabric.io](https://fabric.io)
 
-### With [rnpm](https://github.com/rnpm/rnpm)
+### With [rnpm][rnpm]
 
 `rnpm install react-native-fabric`
 
 rnpm will automatically link all the necessary libraries for both iOS and Android.
 
-If the rnpm installation goes off without a hitch, you can now skip to the **[Crashlytics Usage section](#crashlytics-usage)** or the **[Answers Usage section](#answers-usage)**.
+If the rnpm installation goes off without a hitch, you can now skip to the **[Crashlytics Usage section](crashlytics-usage)** or the **[Answers Usage section](answers-usage)**.
 
-### Without [rnpm](https://github.com/rnpm/rnpm)
+### Without [rnpm][rnpm]
 
 `npm install react-native-fabric --save`
 
@@ -160,23 +160,22 @@ Make sure you also follow the steps described in [`Android`](#android).
 * RN 0.29+ - Edit your `MainApplication.java` (deep in `android/app/src/main/java/...`) to look like this (note **two** places to edit):
 
   ```diff
-  + import com.crashlytics.android.Crashlytics;
-  + import io.fabric.sdk.android.Fabric;
+    + import android.os.Bundle;
+    + import com.crashlytics.android.Crashlytics;
+    + import io.fabric.sdk.android.Fabric;
   
-  public class MainApplication extends Application implements ReactApplication {
+    public class MainApplication extends Application implements ReactApplication {
   
-  +   @Override
-  +   public void onCreate() {
-  +       super.onCreate();
-  +       Fabric.with(this, new Crashlytics());
-  +   }
+    +   @Override
+    +   protected void onCreate() {
+    +       super.onCreate();
+    +       Fabric.with(this, new Crashlytics());
+    +   }
   
-    [...]
+      [...]
   
-  }
-  ``` 
-
-* Note: the `onCreate` access privilege goes from `protected` to `public` from RN 0.28+
+    }
+    ``` 
 
 * Edit your `AndroidManifest.xml` (in `android/app/src/main/`) to look like this. Make sure to enter your fabric API key after `android:value=`, you can find your key on your fabric organisation page.
 
